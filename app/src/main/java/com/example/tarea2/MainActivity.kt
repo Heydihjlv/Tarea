@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        CosultaV()
 
     }
 
 
-    fun CosultaV(view: View){
+    fun CosultaV(){
         val textView = findViewById<TextView>(R.id.textId)
         val queue = Volley.newRequestQueue(this)
         val url = "https://gorest.co.in/public/v1/users"
